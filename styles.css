@@ -6,6 +6,7 @@ header {
     margin: 0px;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     padding: 1em; 
+    position: relative; /* pour que la box-shadow soit visible en passant au-dessus de l'élément en -dessous. Relative veut dire reste sur sa position */
 }
 
 body {
@@ -30,11 +31,19 @@ body {
 }
 
 .info button {
-    border-radius: 1em 1em 1em 1em; /* bords arrondis du bouton*/
-    background-color: #FF79DA;
+    border-radius: 2em; /* bords arrondis du bouton*/
+    background-image: linear-gradient( rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
     font-size:1.1em ;
+    padding: 0.5em 1em;
+    border: none;
     color: white;
+    box-shadow: 0 0 00.5em grey;
+    cursor: pointer;
 
+}
+.info button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
 .fonction ol{
